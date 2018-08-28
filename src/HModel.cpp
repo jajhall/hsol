@@ -1048,8 +1048,11 @@ void HModel::printResult() {
     if (problemStatus == 0) {
         printf("HsolRpIt - OPTIMAL %16s %20.10e %10d %10.3f\n", modelName.c_str(),
                 objective, numberIteration, totalTime);
+        printf("grep_HsolRpIt - OPTIMAL,%16s,%20.10e,%10d,%10.3f,0\n", modelName.c_str(),
+                objective, numberIteration, totalTime);
     } else {
         printf("HsolRpIt - NOT-OPT status = %d\n", problemStatus);
+        printf("grep_HsolRpIt - NOT-OPT,%16s,%20.10e,%10d,%10.3f,%d\n", modelName.c_str(), objective, numberIteration, totalTime, problemStatus);
     }
 }
 
