@@ -78,7 +78,7 @@ void solvePlain(const char *filename) {
     solver.solve(&model);
 
     model.printResult();
-    model.writePivots("plain");
+    //    model.writePivots("plain");
 }
 
 void solveTasks(const char *filename) {
