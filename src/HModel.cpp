@@ -63,7 +63,7 @@ void HModel::setup(const char *filename) {
     // Setup other part
     setup_transposeLP();
     setup_scaleMatrix();
-    setup_tightenBound();
+    //    setup_tightenBound();
     setup_shuffleColumn();
     setup_allocWorking();
 
@@ -1046,10 +1046,10 @@ void HModel::printObject() {
 
 void HModel::printResult() {
     if (problemStatus == 0) {
-        printf("OPTIMAL %16s %20.10e %10d %10.3f\n", modelName.c_str(),
+        printf("HsolRpIt - OPTIMAL %16s %20.10e %10d %10.3f\n", modelName.c_str(),
                 objective, numberIteration, totalTime);
     } else {
-        printf("NOT-OPT status = %d\n", problemStatus);
+        printf("HsolRpIt - NOT-OPT status = %d\n", problemStatus);
     }
 }
 
