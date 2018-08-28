@@ -167,7 +167,7 @@ public:
     int numberIteration;
     double objective;
 
-private:
+    //private:
     // The original model
     int numCol;
     int numRow;

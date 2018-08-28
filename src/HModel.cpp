@@ -64,7 +64,7 @@ void HModel::setup(const char *filename) {
     setup_transposeLP();
     setup_scaleMatrix();
     //    setup_tightenBound();
-    setup_shuffleColumn();
+    //    setup_shuffleColumn();
     setup_allocWorking();
 
     // Initialize the values
