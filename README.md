@@ -11,9 +11,9 @@ exploiting parallelism using either "parallel minor iterations" (PAMI)
 or "single iteration parallelism" (SIP). A full technical reference to
 PAMI and SIP is
 
-Parallelizing the dual revised simplex method
-Q. Huangfu and J. A. J. Hall
-Technical Report ERGO-14-011. 
+Parallelizing the dual revised simplex method Q. Huangfu and J. A. J. Hall
+Mathematical Programming Computation, 10 (1), 119-142, 2018.
+DOI: 10.1007/s12532-017-0130-5
 
 http://www.maths.ed.ac.uk/hall/HuHa13/
 
